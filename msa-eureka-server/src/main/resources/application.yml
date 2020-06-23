@@ -1,0 +1,24 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: msa-eureka-server
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    instance-info-replication-interval-seconds: 10
+  server:
+    enable-self-preservation: true
+    registry-sync-retries: 5
+    remote-region-registry-fetch-interval: 30
+
+ribbon:
+  eureka:
+    enabled: false
