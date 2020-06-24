@@ -1,24 +1,26 @@
 server:
-  port: 8761
-
+  port: ${PORT:8761}
 spring:
   application:
-    name: msa-eureka-server
-
+    name: ${EUREKA_APPLICATION_NAME:msa-eureka-server}
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${EUREKA_HOST_NAME:127.0.0.1}
+    prefer-ip-address: true #host보단 IP를 직접
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    healthcheck:
+      enabled: true
+    registerWithEureka: false #자기자신을 서비스로 등록할지 말지 / true이면 자신에게 헬스체크함
+    fetchRegistry: false #마이크로서비스 인스턴스 목록을 캐시할것인가
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-    instance-info-replication-interval-seconds: 10
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+    instance-info-replication-interval-seconds: 10 #10초마다 서비스 registry 상태 확인
   server:
     enable-self-preservation: true
     registry-sync-retries: 5
     remote-region-registry-fetch-interval: 30
-
 ribbon:
   eureka:
     enabled: false
+
+

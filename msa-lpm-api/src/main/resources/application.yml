@@ -1,6 +1,7 @@
 server:
   port: 8090
 
+#eureka는 spring.application.name 으로 인스턴스를 잡는다. 유니크+NOTNULL
 spring:
   application:
     name: msa-lpm-api
