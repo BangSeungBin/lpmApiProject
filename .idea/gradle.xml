@@ -4,6 +4,8 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$PROJECT_DIR$/../gradle-6.0.1" />
@@ -15,10 +17,11 @@
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/msa-api-gateway" />
         <option name="gradleHome" value="$PROJECT_DIR$/../gradle-6.0.1" />
-        <option name="gradleJvm" value="12" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/msa-api-gateway" />
@@ -27,10 +30,11 @@
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/msa-auth-server" />
         <option name="gradleHome" value="$PROJECT_DIR$/../gradle-6.0.1" />
-        <option name="gradleJvm" value="12" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/msa-auth-server" />
@@ -39,10 +43,11 @@
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/msa-eureka-server" />
         <option name="gradleHome" value="$PROJECT_DIR$/../gradle-6.0.1" />
-        <option name="gradleJvm" value="12" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/msa-eureka-server" />
@@ -51,10 +56,11 @@
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/msa-lpm-api" />
         <option name="gradleHome" value="$PROJECT_DIR$/../gradle-6.0.1" />
-        <option name="gradleJvm" value="12" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/msa-lpm-api" />
