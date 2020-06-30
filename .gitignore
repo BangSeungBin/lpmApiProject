@@ -8,8 +8,4 @@ bin/
 
 # Ignore Gradle build output directory
 build
-!/.idea/modules/
 !/.idea/
-.idea/shelf/
-.idea/workspace.xml
-msa-api-gateway/README.md
